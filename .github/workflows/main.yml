@@ -9,7 +9,7 @@ jobs:
       - name: set up java
         uses: actions/setup-java@v6
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
       - name: code cioverage using sonarqube
         run: mvn -B verify sonar:sonar -Dsonar.projectkey=sonar-github-actions-demo_sonar-github-actions-demo -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.organization=sonar-github-actions-demo -Dsonar.token=$SONAR_TOKEN
