@@ -12,7 +12,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: code cioverage using sonarqube
-        run: mvn -B verify sonar:sonar -Dsonar.projectkey=sonar-github-actions-demo_sonar-github-actions-demo -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.organization=sonar-github-actions-demo -Dsonar.token=$SONAR_TOKEN
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=sonar-github-actions-demo_sonar-github-actions-demo -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.organization=sonar-github-actions-demo
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
