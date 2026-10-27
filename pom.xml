@@ -40,9 +40,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- allowed values: R7, 1.0, 1.5, 2.0 or none -->
         <wtp.version>none</wtp.version>
-    </properties>
-	<properties>
-             <sonar.organization>sonar-github-actions-demo</sonar.organization>
+        <sonar.organization>sonar-github-actions-demo</sonar.organization>
     </properties>
 
     <scm>
